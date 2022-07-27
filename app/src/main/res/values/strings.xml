@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Ecom</string>
+
+    <string-array name="products">
+        <item>Jean</item>
+        <item>Jwellery</item>
+        <item>Lipstick</item>
+        <item>Shirt</item>
+        <item>Shoe</item>
+        <item>Tshirt</item>
+        <item>Short</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>100/-</item>
+        <item>200/-</item>
+        <item>300/-</item>
+        <item>400/-</item>
+        <item>500/-</item>
+        <item>600/-</item>
+        <item>800/-</item>
+
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+        <item>Description</item>
+
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

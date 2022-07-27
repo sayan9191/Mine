@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="New User"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="22dp"
+        android:layout_toRightOf="@+id/txtWelcome"
+
+        android:textColor="#2196F3"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/firstNameLayout"
+        android:hint="Enter your First Name"
+        android:layout_below="@+id/txtWelcome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFirstName"
+            android:textColor="#2196F3"
+            android:textStyle="italic"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/lastNameLayout"
+        android:hint="Enter your Last Name"
+        android:layout_below="@+id/firstNameLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLastName"
+            android:textColor="#2196F3"
+            android:textStyle="italic"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/phoneNoLayout"
+        android:hint="Enter Your Email Id"
+        android:layout_below="@+id/lastNameLayout"
+        android:layout_centerHorizontal="true"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPhone"
+            android:textColor="#2196F3"
+            android:textStyle="italic"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/passwordLayout"
+        android:hint="Set Password"
+        android:layout_below="@+id/phoneNoLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPassword"
+            android:textColor="#2196F3"
+            android:textStyle="italic"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLayout"
+        android:layout_marginLeft="30dp"
+        android:text="Passwords must be at least 6 characters."
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:id="@+id/txtCondition"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAlert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="By enrolling your mobile phone number, you consent to receiving automated security notifications via text message from ECOM.express. You can opt out by removing your mobile number on the Login  Security page located in Your Account settings. Message and data rates may apply."
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnNewSignup"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtCondition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Sign up"
+
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/btnNewLogin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnNewSignup"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="Back to LogIn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
