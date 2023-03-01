@@ -34,7 +34,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         LayoutInflater inflater= LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.my_row, parent,false);
         MyViewHolder myViewHolder1= new MyViewHolder(view);
-
         return (myViewHolder1);
     }
 
@@ -42,9 +41,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         String d = data1[position];
         int i = images[position];
+        String c= data2[position];
 
         holder.myText1.setText(d);
         holder.myText2.setText(data2[position]);
+
         holder.myText3.setText(data3[position]);
         try {
             holder.myImage.setImageResource(i);
@@ -55,7 +56,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listner.onClicked(new DataClass(i, d));
+                listner.onClicked(new DataClass(i, d, c));
             }
         });
 

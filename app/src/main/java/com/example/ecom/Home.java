@@ -35,7 +35,6 @@ public class Home extends AppCompatActivity {
                 case R.id.profile_nav:
                     replaceFragment(new Profile());
                     break;
-
             }
 
 
@@ -47,8 +46,9 @@ public class Home extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-            super.onBackPressed();
-            finishAffinity();
+        super.onBackPressed();
+        finishAffinity();
+        
     }
 
     private void replaceFragment(Fragment fragment) {

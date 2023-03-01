@@ -3,12 +3,14 @@
 
     <string-array name="products">
         <item>Jean</item>
-        <item>Jwellery</item>
+        <item>Jewellery</item>
         <item>Lipstick</item>
         <item>Shirt</item>
         <item>Shoe</item>
-        <item>Tshirt</item>
+        <item>T-shirt</item>
         <item>Short</item>
+        <item>Banana</item>
+
     </string-array>
 
     <string-array name="price">
@@ -19,18 +21,32 @@
         <item>500/-</item>
         <item>600/-</item>
         <item>800/-</item>
+        <item>900/-</item>
+
 
 
     </string-array>
 
     <string-array name="description">
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
-        <item>Description</item>
+        <item>Description 1</item>
+        <item>Description 2</item>
+        <item>Description 3</item>
+        <item>Description 4</item>
+        <item>Description 5</item>
+        <item>Description 6</item>
+        <item>Description 7</item>
+        <item>Description 8</item>
+
+    </string-array>
+
+    <string-array name="topShow">
+        <item>Top Deal</item>
+        <item>Mobile</item>
+        <item>Electronics</item>
+        <item>Fashion</item>
+        <item>Furniture</item>
+        <item>Grocery</item>
+        <item>Medicine</item>
 
     </string-array>
 

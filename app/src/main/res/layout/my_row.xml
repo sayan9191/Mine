@@ -53,7 +53,7 @@
                 android:id="@+id/myText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="paisa"
+                android:text="price"
                 android:textSize="20sp"
                 android:textColor="#FF5722"
                 android:layout_marginTop="10dp"

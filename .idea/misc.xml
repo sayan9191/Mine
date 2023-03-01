@@ -3,18 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/drawable/bandage_shape.xml" value="0.142" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/drawable/homeicon.xml" value="0.142" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/drawable/notification.xml" value="0.1585" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/drawable/profile_icon.xml" value="0.142" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/drawable/share.xml" value="0.142" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_details.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_home.xml" value="0.16" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/activity_splashscreen.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_cart.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_details.xml" value="0.17395833333333333" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_profile.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/cart.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/cart_action_item.xml" value="1.5" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/cart_feed.xml" value="0.25" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_cart.xml" value="0.22" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_details.xml" value="0.2" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/layout_listner.xml" value="0.22" />
         <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/layout/my_row.xml" value="0.33" />
-        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/menu/botton_nav_menu.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/SayanMandal/AndroidStudioProjects/Ecom/app/src/main/res/menu/botton_nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

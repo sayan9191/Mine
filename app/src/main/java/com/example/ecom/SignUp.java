@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,6 +19,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.UserInfo;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Objects;
 
 public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -47,6 +53,8 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
         });
 
     }
+
+
     private void createUser() {
         String fName = firstName.getText().toString();
         String lName = lastName.getText().toString();
@@ -74,6 +82,7 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
+                        myMethod(new EmployeeInfo(fName, lName, email));
                         Toast.makeText(SignUp.this,"SUCESSFULL",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignUp.this,MainActivity.class));
                     }else{
@@ -92,6 +101,21 @@ public class SignUp extends AppCompatActivity implements AdapterView.OnItemSelec
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    void myMethod(EmployeeInfo employee){
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://ecom-e485e-default-rtdb.firebaseio.com");
+        DatabaseReference myRef = database.getReference("user");
+
+        myRef.child(Objects.requireNonNull(mAuth.getUid())).setValue(employee).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if(task.isSuccessful()){
+                    Log.d("Sun", "onComplete: ");
+                }
+            }
+        });
     }
 
 }
